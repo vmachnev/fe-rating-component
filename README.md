@@ -10,7 +10,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: (https://github.com/vasylmachnev999/fe-rating-component)
+- Solution URL: (https://www.frontendmentor.io/solutions/interactive-rating-component-solution-SJgn9mQX9)
 - Live Site URL: (https://fe-mentor-rating-component.netlify.app)
 
 ## My process
