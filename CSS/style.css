@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --color-orange: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-l-grey: hsl(217, 12%, 63%);
+  --color-m-grey: hsl(216, 12%, 54%);
+  --color-d-blue: hsl(213, 19%, 18%);
+  --color-v-d-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+.show {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Overpass, sans-serif;
+  line-height: 1.4;
+  background-color: var(--color-v-d-blue);
+}
+
+.card {
+  max-width: 41rem;
+  background-color: var(--color-d-blue);
+  border-radius: 2rem;
+  padding: 3rem 3.5rem;
+}
+
+.card__star {
+  width: 5rem;
+  aspect-ratio: 1;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-v-d-blue);
+}
+
+.card__title {
+  font-size: 2.8rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.card__description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-m-grey);
+  margin-bottom: 3rem;
+}
+
+.card__rating {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card__rating .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  aspect-ratio: 1;
+  border: none;
+  background-color: var(--color-v-d-blue);
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--color-l-grey);
+  transition: all .4s;
+}
+
+.card__rating .button:hover {
+  background-color: var(--color-m-grey);
+  color: var(--color-white);
+}
+
+.card__rating .button:focus {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.card__submit {
+  width: 100%;
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-orange);
+  border: none;
+  border-radius: 2.5rem;
+  font-family: inherit;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.card__submit:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+}
+
+.card-thanks__container {
+  display: none;
+}
+
+.card__illustration {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.card__selected {
+  max-width: 20rem;
+  margin: 0 auto 3.3rem;
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 0;
+  background-color: var(--color-v-d-blue);
+  color: var(--color-orange);
+  border-radius: 2rem;
+}
+
+.card-thanks__title {
+  font-size: 2.8rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-thanks__description {
+  max-width: 32rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-m-grey);
+  text-align: center;
+}
+
+
